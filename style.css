@@ -1,0 +1,400 @@
+@font-face {
+    font-family: "Mulish" ;
+    src: url("./assest/fonts/Mulish-Bold.ttf");
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+@font-face {
+    font-family: "Mulish" ;
+    src: url("./assest/fonts/Mulish-Light.ttf");
+    font-weight: 400;
+    font-style: light;
+}
+
+
+
+
+/* reset */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* color of content */
+:root {
+    --color-text: #BDBDBD;
+    --color-white: #ffffff;
+    --color-primary: #1E3240;
+    --color-body: #F5F5F5;
+    --color-header: #C3DAF2;
+    --color-black: #000;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+
+
+/* html {
+    font-size: 62.5%;
+ } */
+
+ body {
+    background-color: var(--color-body);
+    font-size: 14px;
+    font-family: "Mulish";
+
+ }
+
+
+
+h2 {
+    font-size: 48px;
+}
+
+
+.header {
+    background-color: var(--color-header);
+    
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+    padding-top: 20px;
+    
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 80px;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+
+.list li a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+
+.nav-text {
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Mulish" ;
+}
+
+
+.content_section {
+    margin-right: 0;
+}
+
+.content {
+    color: var(--color-primary);
+}
+
+
+.header-img_house {
+    margin-bottom: -5px;  
+    background-attachment: fixed; 
+}
+
+.content-heading {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.content span {
+    font-size: 18px;
+    padding-top: 42px;
+}
+
+
+.btn {
+    margin-top: 2rem;
+    border: none;
+    padding: 18px 24px;
+    font-size: 14px;
+
+}
+
+.btn-primary {
+    margin-right: 15px;
+    background: var(--color-primary);
+    color: var(--color-white);
+
+}
+
+.btn-secendry {
+    background-color: var(--color-header);
+    border: 1px solid var(--color-primary);
+
+}
+
+
+.Statistics-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px ;
+}
+
+.content-detail {
+    width: 540px;
+    margin: 48.5px 18px 48.5px 125px;
+    /*! whitout margin i can not fix space */
+}
+
+.content-detail_more h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-black);
+    font-family: "Mulish" ;
+
+}
+
+.content-detail_more p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+
+.detail {
+    display: flex;
+    margin-top: 40px;
+    gap: 48px;
+
+}
+
+
+.detail_num {
+    color: var(--color-text);
+}
+
+.detail_num_heading{
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--color-primary);
+    margin-top: 8px;
+}
+
+
+.detail_num_text {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+.project-house {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 184px;
+    padding-left: 30px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin-bottom: 84px;
+}
+
+
+
+
+.project-icon {
+    width: 100px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+}
+
+.project-icon img{
+    width: 21px;
+    height: 21px;
+}
+
+
+.project-text h2 {
+    color: var(--color-primary);
+}
+.project-text p{
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+/* 
+.project-detail_img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+
+.project-house-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-house-detail {
+    position: relative;
+}
+
+.project-house-detail_img {
+    width: 350px;
+    height: 490px;
+
+}
+
+.project-house-detail-text {
+    width: 290px;
+    height: 80px;
+    background-color: var(--color-white);
+    /* z-index: -5px; */
+    position: absolute;
+    left: 30px;
+    top: 440px;
+    /* ! ۴۱۰ */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 22px 20px 41px;
+    font-family: 'Mulish';
+}
+
+
+.project-house-detail-text p:first-child{
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+.project-house-detail-text p:last-child { 
+    font-size: 10px;
+    color: var(--color-primary);
+    font-weight: 500;
+    padding-top: 6px;
+
+}
+
+
+/* comment */
+.comment-user {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 184px;
+    
+}
+
+.comment-user-heading {
+    margin-bottom: 78px;
+}
+
+
+.comment-user-heading h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.comment-user-heading p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.comment-user-conent {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.comment-user-detail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+}
+
+.comment-user-detail>div{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.comment-user-conent_img {
+    margin-right: 125px;
+}
+
+.comment-user-quote {
+    width: 50px;
+}
+
+
+.comment-user-detail_heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.comment-user-detail_text {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--color-primary);
+    padding-top: 18px;
+}
+
+.comment-user-detail_name {
+    font-size: 24px;
+    color: var(--color-primary);
+    line-height: 120%;
+    margin-top: 18px;
+}
+
+.comment-user-detail_role {
+    font-size: 18px;
+}
+
+
+/* contact */
+
+
+/* width: 540px;
+height: 120px;
+top: 268px;
+gap: 0px;
+opacity: 0px;
+ */
