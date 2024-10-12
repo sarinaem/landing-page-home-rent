@@ -37,6 +37,7 @@
 
 .container {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -125,9 +126,9 @@ section {
 
 
 .btn {
-    margin-top: 2rem;
+
     border: none;
-    padding: 18px 24px;
+   
     font-size: 14px;
 
 }
@@ -136,12 +137,16 @@ section {
     margin-right: 15px;
     background: var(--color-primary);
     color: var(--color-white);
+    margin-top: 2rem;
+    padding: 18px 24px;
 
 }
 
 .btn-secendry {
     background-color: var(--color-header);
     border: 1px solid var(--color-primary);
+    margin-top: 2rem;
+    padding: 18px 24px;
 
 }
 
@@ -398,3 +403,55 @@ top: 268px;
 gap: 0px;
 opacity: 0px;
  */
+
+.contact-section {
+    margin-bottom: 120px;
+}
+
+ .contact-section_img {
+    width: 445px;
+    height: 500px;
+    margin-right: 125px;
+ }
+
+
+.form-section {
+    margin-top: 40px;
+    margin-bottom: 9.5px;
+}
+
+.form-section input, textarea {
+    width: 255px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 18px;
+    padding: 14px 18px;
+}
+
+.form-section textarea {
+    width: 540px;
+    height: 120px;
+    resize: none;
+}
+
+.contact-detail_send {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 18px;
+    
+}
+
+.btn-contact {
+    margin-top: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 18px 24px;
+
+}
+
+.contact-detail_spam {
+    font-size: 12px;
+    color: var(--color-text);
+    margin-top: 59px;
+}

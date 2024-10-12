@@ -144,28 +144,34 @@
             </div>
           </div>
       </section>
-      <section class="">
-        <img src="./assest/img/contact-for-rent-home.png" alt="contact-for-rent-home">
-        <div>
-          <div>
+      <section class="contact-section">
+        <img class="contact-section_img" src="./assest/img/contact-for-rent-home.png" alt="contact-for-rent-home">
+        <div class="contact-detail">
+          <!-- <div> -->
             <h2>Contact us</h2>
             <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
-          </div>
-          <form action="#">
+          <!-- </div> -->
+          <form class="form-section" action="#">
             <label for="firstName"></label>
-            <input type="text" placeholder="First name" id="firstName">
+            <input type="text" placeholder="First name" id="firstName" required>
             <label for="lastName"></label>
-            <input type="text" placeholder="Last name" id="lastName">
+            <input type="text" placeholder="Last name" id="lastName" required>
             <label for="email"></label>
-            <input type="email" placeholder="Email address" id="email">
+            <input  type="email" placeholder="Email address" id="email">
             <label for="phone"></label>
-            <input type="number" placeholder="Phone number" id="phone">
-            <textarea name="" id="" placeholder="Description" style="resize: none;"></textarea>
+            <input type="tel" placeholder="Phone number" id="phone" required>
+            <textarea name="" id="" placeholder="Description"></textarea>
+            <div class="contact-detail_send">
+              <button class="btn btn-contact">Get a quote</button>
+              <p class="contact-detail_spam">We don’t sell your email and spam</p>
+            </div>
           </form>
-          <button class="btn btn-primary">Get a quote</button>
+      
+        
   
         </div>
       </section>
+      
     </div>
   </body>
 </html>
