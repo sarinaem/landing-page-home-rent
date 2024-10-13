@@ -1,156 +1,93 @@
-@font-face {
-    font-family: "Mulish" ;
-    src: url("./assest/fonts/Mulish-Bold.ttf");
-    font-weight: 700;
-    font-style: bold;
-}
-
-
-@font-face {
-    font-family: "Mulish" ;
-    src: url("./assest/fonts/Mulish-Light.ttf");
-    font-weight: 400;
-    font-style: light;
-}
-
-
-
-
 /* reset */
-
 *, *::after, *::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
 }
-
-/* color of content */
 :root {
     --color-text: #BDBDBD;
     --color-white: #ffffff;
-    --color-primary: #1E3240;
+    --color-primary:  rgba(30, 50, 64, 1);
     --color-body: #F5F5F5;
     --color-header: #C3DAF2;
     --color-black: #000;
 }
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
-
-
-
-/* html {
-    font-size: 62.5%;
- } */
-
  body {
     background-color: var(--color-body);
     font-size: 14px;
     font-family: "Mulish";
-
  }
-
-
-
 h2 {
     font-size: 48px;
 }
-
-
 .header {
-    background-color: var(--color-header);
-    
+    background-color: var(--color-header);    
 }
-
-
 section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 80px;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
-
 .nav-list ul{
     display: flex;
     justify-content: space-between;
     align-items:center;
     gap: 80px;
     font-weight: 400;
-    font-size: 14px;
-    
+    font-size: 14px;  
 }
-
-
 .list li a{
     color: var(--color-primary);
     text-decoration: none;
 }
-
-
 .nav-text {
     color: var(--color-primary);
     font-size: 18px;
     font-weight: 700;
-    font-family: "Mulish" ;
 }
-
-
 .content_section {
     margin-right: 0;
 }
-
 .content {
     color: var(--color-primary);
 }
-
-
 .header-img_house {
     margin-bottom: -5px;  
     background-attachment: fixed; 
 }
-
 .content-heading {
     font-size: 90px;
     font-weight: 700;
 }
-
 .content span {
     font-size: 18px;
     padding-top: 42px;
 }
-
-
 .btn {
-
-    border: none;
-   
-    font-size: 14px;
-
+   border: none;
+   font-family: "Mulish";
+   font-size: 14px;
 }
-
 .btn-primary {
     margin-right: 15px;
     background: var(--color-primary);
     color: var(--color-white);
     margin-top: 2rem;
     padding: 18px 24px;
-
 }
-
 .btn-secendry {
     background-color: var(--color-header);
     border: 1px solid var(--color-primary);
     margin-top: 2rem;
     padding: 18px 24px;
-
 }
-
-
 .Statistics-content {
     display: flex;
     justify-content: center;
@@ -163,49 +100,35 @@ section {
     margin: 48.5px 18px 48.5px 125px;
     /*! whitout margin i can not fix space */
 }
-
 .content-detail_more h2 {
     font-size: 48px;
     font-weight: 700;
     color: var(--color-black);
     font-family: "Mulish" ;
-
 }
-
 .content-detail_more p {
     font-size: 18px;
     font-weight: 400;
     color: var(--color-text);
 }
-
-
 .detail {
     display: flex;
     margin-top: 40px;
     gap: 48px;
-
 }
-
-
 .detail_num {
     color: var(--color-text);
 }
-
 .detail_num_heading{
     font-size: 48px;
     font-weight: 300;
     color: var(--color-primary);
     margin-top: 8px;
 }
-
-
 .detail_num_text {
     font-size: 14px;
     font-weight: 700;
-
 }
-
-
 .project-house {
     display: flex;
     flex-direction: column;
@@ -215,7 +138,6 @@ section {
     margin-bottom: 184px;
     padding-left: 30px;
 }
-
 .project-content {
     display: flex;
     flex-direction: row;
@@ -224,10 +146,6 @@ section {
     width: 90%;
     margin-bottom: 84px;
 }
-
-
-
-
 .project-icon {
     width: 100px;
     height: 48px;
@@ -236,13 +154,10 @@ section {
     align-items: center;
     gap: 17px;
 }
-
 .project-icon img{
     width: 21px;
     height: 21px;
 }
-
-
 .project-text h2 {
     color: var(--color-primary);
 }
@@ -250,15 +165,6 @@ section {
     color: var(--color-text);
     font-size: 18px;
 }
-
-/* 
-.project-detail_img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} */
-
-
 .project-house-details {
     display: flex;
     flex-direction: row;
@@ -266,17 +172,13 @@ section {
     align-items: center;
     gap: 30px;
 }
-
 .project-house-detail {
     position: relative;
 }
-
 .project-house-detail_img {
     width: 350px;
     height: 490px;
-
 }
-
 .project-house-detail-text {
     width: 290px;
     height: 80px;
@@ -285,7 +187,6 @@ section {
     position: absolute;
     left: 30px;
     top: 440px;
-    /* ! ۴۱۰ */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -293,133 +194,91 @@ section {
     padding: 22px 20px 41px;
     font-family: 'Mulish';
 }
-
-
 .project-house-detail-text p:first-child{
     color: var(--color-primary);
     font-size: 14px;
     font-weight: 700;
-
 }
-
-
 .project-house-detail-text p:last-child { 
     font-size: 10px;
     color: var(--color-primary);
     font-weight: 500;
     padding-top: 6px;
-
 }
-
-
-/* comment */
 .comment-user {
     display: flex;
     flex-direction: column;
-    margin-bottom: 184px;
-    
+    margin-bottom: 184px; 
 }
-
 .comment-user-heading {
     margin-bottom: 78px;
 }
-
-
 .comment-user-heading h2{
     font-size: 48px;
     font-weight: 700;
     text-align: center;
 }
-
-
 .comment-user-heading p{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
 }
-
-
 .comment-user-conent {
     display: flex;
     flex-direction: row;
-
 }
-
-
 .comment-user-detail {
     display: flex;
     flex-direction: column;
     margin-top: 43px;
+    margin-right: 1px;
 }
-
 .comment-user-detail>div{
     display: flex;
     flex-direction: column;
-
     justify-content: space-between;
     gap: 18px;
 }
-
 .comment-user-conent_img {
     margin-right: 125px;
+    width: 445px;
+    height: 350px;
 }
-
 .comment-user-quote {
     width: 50px;
 }
-
-
 .comment-user-detail_heading {
     font-size: 32px;
     font-weight: 700;
     color: var(--color-primary);
 }
-
 .comment-user-detail_text {
     font-size: 24px;
     font-weight: 300;
     color: var(--color-primary);
     padding-top: 18px;
 }
-
 .comment-user-detail_name {
     font-size: 24px;
     color: var(--color-primary);
     line-height: 120%;
     margin-top: 18px;
 }
-
 .comment-user-detail_role {
     font-size: 18px;
 }
-
-
-/* contact */
-
-
-/* width: 540px;
-height: 120px;
-top: 268px;
-gap: 0px;
-opacity: 0px;
- */
-
 .contact-section {
     margin-bottom: 120px;
 }
-
  .contact-section_img {
     width: 445px;
     height: 500px;
     margin-right: 125px;
  }
-
-
 .form-section {
     margin-top: 40px;
     margin-bottom: 9.5px;
 }
-
 .form-section input, textarea {
     width: 255px;
     height: 50px;
@@ -427,13 +286,11 @@ opacity: 0px;
     margin-bottom: 18px;
     padding: 14px 18px;
 }
-
 .form-section textarea {
     width: 540px;
     height: 120px;
     resize: none;
 }
-
 .contact-detail_send {
     display: flex;
     flex-direction: row;
@@ -441,17 +298,106 @@ opacity: 0px;
     gap: 18px;
     
 }
-
 .btn-contact {
     margin-top: 40px;
     background: var(--color-primary);
     color: var(--color-white);
     padding: 18px 24px;
-
 }
-
 .contact-detail_spam {
     font-size: 12px;
     color: var(--color-text);
     margin-top: 59px;
 }
+.contact-detail-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text);
+}
+footer {
+    background-color: var(--color-primary);
+    height: auto;
+}
+.footer-section {
+    margin: 73px 494px 73px 179px;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;   
+}
+.footer-section-information {
+   /* padding: 73px 192px 12px 179px; */
+    padding-top: 73px;
+}
+
+.footer-section-information-name-of-site {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-white);
+    padding-bottom: 12px;
+}
+.location {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    text-wrap: nowrap;
+}
+.phone, .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+}
+.phone p, .email p{
+    margin-left: 8px;
+}
+.footer-section-links-and-social {
+    display: flex;
+    flex-direction: row;
+    margin: 73px 180px 0 315px;
+    /* gap: 76px; */
+}
+.copyright {
+    color: var(--color-text);
+    font-size: 12px;
+    font-family: "Mulish";
+    margin-left: 179px;
+}
+.links-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;   
+}
+.quick-link p{
+    padding-right: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);   
+}
+.Links p{
+    padding-right: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+.list-link {
+    margin: 12px 0;
+}
+.list-link li:first-child{
+    margin-top: 1px;
+}
+
+.list-link>li {
+    padding-bottom: 12px;
+}
+
+
+.social-media p{
+    padding-right: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+
+

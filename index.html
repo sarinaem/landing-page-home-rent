@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assest/fonts/font.css" />
     <title>Rent Home</title>
   </head>
   <body>
@@ -85,7 +86,7 @@
         <div class="project-content">
           <div class="project-text">
             <h2>Ongoing projects</h2>
-            <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+            <p class="project-text-about-ongoing">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
           </div>
           <span class="project-icon">
             <img src="./assest/img/right-icon.svg" alt="left arrow" />
@@ -130,7 +131,9 @@
             <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
           </div>
           <div class="comment-user-conent">
-            <img class="comment-user-conent_img" src="./assest/img/girl.png" alt="girl is happy">
+            <div>
+              <img class="comment-user-conent_img" src="./assest/img/girl.png" alt="girl is happy">
+            </div>
             <div class="comment-user-detail">
                <div>
                 <img class="comment-user-quote" src="./assest/img/gg_quote.png" alt="quote">
@@ -147,10 +150,8 @@
       <section class="contact-section">
         <img class="contact-section_img" src="./assest/img/contact-for-rent-home.png" alt="contact-for-rent-home">
         <div class="contact-detail">
-          <!-- <div> -->
             <h2>Contact us</h2>
-            <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
-          <!-- </div> -->
+            <p class="contact-detail-text">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
           <form class="form-section" action="#">
             <label for="firstName"></label>
             <input type="text" placeholder="First name" id="firstName" required>
@@ -167,11 +168,68 @@
             </div>
           </form>
       
-        
-  
         </div>
       </section>
-      
+      <footer>
+        <div class="footer-section">
+          <div class="footer-section-information">
+            <p class="footer-section-information-name-of-site">LUGAR</p>
+            <div>
+              <div class="location">
+                <img src="./assest/icon/location.svg" width="14px"
+                height="14px" alt="location-of-company">
+                <p>2118 Thornridge Cir.<br>
+                  Dubai, UAE 35624</p>
+              </div>
+              <div class="phone">
+                  <img src="./assest/icon/phone.svg" width="14px"
+                  height="14px" alt="phone">
+                  <p>+33 415 65356 - 9</p>
+              </div>
+              <div class="email">
+                <img src="./assest/icon/email.svg" alt="email" width="14px"
+                height="14px">
+                <p>contact@lugar.com</p>
+              </div>
+            </div>
+          </div>
+                
+          <div class="footer-section-links-and-social">
+            <div class="links-footer">
+              <div class="quick-link">
+                <p>QUICK LINKS</p>
+                <ul class="list-link">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Project</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="Links">
+                <p>LEGAL LINKS</p>
+                <ul class="list-link">
+                  <li>Terms</li>
+                  <li>Conditions</li>
+                  <li>Policy</li>
+                </ul>
+              </div>
+              <div class="social-media">
+                <p>SOCIAL MEDIA</p>
+                <ul class="list-link">
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>YouTube</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
+          <p class="copyright">Copyright @ 2022 Lugar Inc.</p>
+
+      </footer>
     </div>
   </body>
 </html>
