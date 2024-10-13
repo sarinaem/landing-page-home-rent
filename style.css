@@ -93,6 +93,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 120px ;
+    
 }
 
 .content-detail {
@@ -269,15 +270,23 @@ section {
 }
 .contact-section {
     margin-bottom: 120px;
+   
 }
  .contact-section_img {
     width: 445px;
     height: 500px;
+    margin-left: 38px;
     margin-right: 125px;
  }
 .form-section {
     margin-top: 40px;
     margin-bottom: 9.5px;
+}
+input, textarea,
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 18px;
+    font-family: "Mulish"; 
+    font-weight: 400;
 }
 .form-section input, textarea {
     width: 255px;
@@ -286,7 +295,7 @@ section {
     margin-bottom: 18px;
     padding: 14px 18px;
 }
-.form-section textarea {
+.description {
     width: 540px;
     height: 120px;
     resize: none;
@@ -295,14 +304,16 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 18px;
-    
+    gap: 18px;   
 }
 .btn-contact {
     margin-top: 40px;
     background: var(--color-primary);
     color: var(--color-white);
     padding: 18px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Mulish"; 
 }
 .contact-detail_spam {
     font-size: 12px;
@@ -317,6 +328,7 @@ section {
 footer {
     background-color: var(--color-primary);
     height: auto;
+    padding-bottom: 80px;
 }
 .footer-section {
     margin: 73px 494px 73px 179px;
@@ -341,40 +353,22 @@ footer {
     gap: 8px;
     text-wrap: nowrap;
 }
-.phone, .email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.location-detail {
     margin-top: 12px;
 }
-.phone p, .email p{
-    margin-left: 8px;
-}
+
 .footer-section-links-and-social {
     display: flex;
     flex-direction: row;
     margin: 73px 180px 0 315px;
     /* gap: 76px; */
 }
-.copyright {
-    color: var(--color-text);
-    font-size: 12px;
-    font-family: "Mulish";
-    margin-left: 179px;
-}
 .links-footer {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     text-wrap: nowrap;   
 }
-.quick-link p{
-    padding-right: 76px;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--color-white);   
-}
-.Links p{
+.links-text{
     padding-right: 76px;
     font-size: 18px;
     font-weight: 700;
@@ -390,14 +384,12 @@ footer {
 .list-link>li {
     padding-bottom: 12px;
 }
-
-
-.social-media p{
-    padding-right: 76px;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--color-white);
+.copyright {
+    color: var(--color-text);
+    font-size: 12px;
+    margin: 80px 0 0 179px;
+    font-weight: 400;
+    line-height: 15.06px;
 }
-
 
 
